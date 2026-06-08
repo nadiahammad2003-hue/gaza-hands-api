@@ -16,6 +16,10 @@ class messageController extends Controller
     $message->is_read = $request->is_read ?? false;
     $message->save();
 
-    return response()->json(['status' => 'success', 'message' => 'Message sent successfully!','data' => $message ,201]);
+    return response()->json([
+        'status' => 'success',
+         'message' => 'Message sent successfully!',
+         'data' => $message ,201
+         ]);
    }
 }

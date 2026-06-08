@@ -16,6 +16,10 @@ class contactController extends Controller
     $contact->message = $request->message;
     $contact->save();
 
-    return response()->json(['status' => 'success', 'message' => 'Message sent successfully!','data' => $contact ,201]);
+    return response()->json([
+      'status' => 'success',
+       'message' => 'Message sent successfully!',
+       'data' => $contact ,201
+       ]);
    }
 }

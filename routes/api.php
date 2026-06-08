@@ -10,3 +10,5 @@ Route::get('/user', function (Request $request) {
 Route::post('/contacts', [App\Http\Controllers\contactController::class,'store']);
 Route::post('/message', [App\Http\Controllers\messageController::class,'store']);
 Route::post('/notifications', [App\Http\Controllers\notificationController::class,'store']);
+Route::post('/categories', [App\Http\Controllers\categoryController::class,'store']);
+Route::post('/donations', [App\Http\Controllers\donationController::class,'store']);
